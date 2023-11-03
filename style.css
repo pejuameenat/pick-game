@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(120deg, red, rgb(173, 83, 98), purple);
+    min-height: 100vh;
+    color: #fff;
+}
+.container{
+    width: 80%;
+    max-width: 1120px;
+    margin: 2rem auto;
+    position: relative;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+.player{
+    grid-column: span 6;
+    border-radius: 7px;
+}
+.player{
+    padding: 1rem 1rem 5rem;
+    background-color:rgb(203, 83, 101); ;
+    
+}
+.section-1{
+    background-color: rgb(173, 69, 86);
+}
+.player-active{
+    background-color: pink;
+}
+.player h1{
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+ .winner{
+   display: none;
+ }
+.score{
+    text-align: center;
+    color: rgb(204, 44, 71);
+    font-size: 4rem;
+    padding-bottom: 3rem;
+}
+.current{
+    width: 35%;
+    padding: .9rem 1rem;
+    margin:2rem auto;
+    background-color: rgb(204, 44, 71);
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+.img, .btn{
+    position: absolute;
+} 
+.img{
+    top: 9rem;
+    left: 46%;
+    width: 8%;
+}
+.hide{
+    display: none;
+}
+.new-game{
+    top: 3rem;
+    left: 43%;
+}
+.btn{
+    width: 150px;
+    padding: .6rem 1rem;
+    border-radius: 25px;
+    border: 0;
+    outline: 0;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.4);
+    
+}
+.roll-dice{
+    bottom:4rem;
+    left: 43%;
+}
+.hold{
+    width: 110px;
+    bottom:1rem;
+    left: 45%;
+}
+.player-winner{
+    background-color: black;
+}
+/* @media only screen and(max-width:800px){
+    .player{
+        grid-column: span 12;
+    }
+} */
